@@ -1,0 +1,52 @@
+# ============================================================
+# requirements.txt
+# Python Dependencies for Excel-PostgreSQL-Dashboard
+# Author: Shiv Iyer | MinervaDB | ChistaDATA
+# Install: pip install -r python/requirements.txt
+# ============================================================
+
+# ---- PostgreSQL Connectivity ----
+psycopg2-binary>=2.9.9          # PostgreSQL adapter (binary = no compilation needed)
+SQLAlchemy>=2.0.0               # SQL toolkit & ORM (used with pandas read_sql)
+
+# ---- Data Processing ----
+pandas>=2.0.0                   # Data manipulation and analysis
+numpy>=1.24.0                   # Numerical computing (pandas dependency)
+
+# ---- Excel Integration ----
+openpyxl>=3.1.0                 # Read/write Excel 2010+ (.xlsx) files
+xlwings>=0.30.0                 # Excel automation (read/write live Excel)
+xlrd>=2.0.1                     # Read legacy .xls files (read-only)
+
+# ---- Scheduling ----
+schedule>=1.2.0                 # Job scheduling for automated refresh
+APScheduler>=3.10.0             # Advanced Python Scheduler (cron support)
+
+# ---- Configuration & Security ----
+python-dotenv>=1.0.0            # Load .env environment variables
+cryptography>=41.0.0            # Fernet encryption for credential storage
+keyring>=24.0.0                 # OS keychain integration
+
+# ---- Data Validation ----
+pydantic>=2.0.0                 # Data validation using Python type hints
+cerberus>=1.3.5                 # Lightweight schema validation
+
+# ---- Logging ----
+loguru>=0.7.0                   # Simplified, structured logging
+
+# ---- HTTP/API (optional - for REST data sources) ----
+requests>=2.31.0                # HTTP library for API calls
+httpx>=0.25.0                   # Async HTTP client
+
+# ---- Development & Testing ----
+pytest>=7.4.0                   # Testing framework
+pytest-cov>=4.1.0               # Coverage reporting
+pytest-mock>=3.11.0             # Mocking utilities
+black>=23.0.0                   # Code formatter
+flake8>=6.1.0                   # Linting
+mypy>=1.5.0                     # Static type checking
+pre-commit>=3.4.0               # Git hooks for code quality
+
+# ---- Documentation ----
+mkdocs>=1.5.0                   # Documentation generator
+mkdocs-material>=9.0.0          # Material theme for MkDocs
